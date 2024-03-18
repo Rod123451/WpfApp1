@@ -13,13 +13,14 @@ using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
 
+
 namespace WpfApp1
 {
     /// <summary>
     /// Логика взаимодействия для MainWindow.xaml
     /// </summary>
     public partial class MainWindow : Window
-    {
+    {  bool Choised = false;
         public MainWindow()
         {
             InitializeComponent();
@@ -27,7 +28,20 @@ namespace WpfApp1
 
         private void Button_Click(object sender, RoutedEventArgs e)
         {
+            Choised = true;
+            tbLogin.IsEnabled = true;
+            tbPass1.IsEnabled = true;
+            tbPass2.IsEnabled = false;
+            bEnter.IsEnabled = true;
+        }
 
+        private void bRegistration_Click(object sender, RoutedEventArgs e)
+        {
+            Choised = false;
+            tbLogin.IsEnabled = true;
+            tbPass1.IsEnabled = true;
+            tbPass2.IsEnabled = true;
+            bEnter.IsEnabled = true;
         }
     }
 }
