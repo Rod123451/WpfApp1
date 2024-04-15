@@ -14,7 +14,7 @@
             <ColumnDefinition Width="0*"/>
             <ColumnDefinition Width="28*"/>
         </Grid.ColumnDefinitions>
-        <Button x:Name="bEnter" Content="Войти" HorizontalAlignment="Left" Margin="90,260,0,0" VerticalAlignment="Top" Height="34" Width="85" Grid.Column="2"/>
+        <Button x:Name="bEnter" Content="Войти" HorizontalAlignment="Left" Margin="90,260,0,0" VerticalAlignment="Top" Height="34" Width="85" Grid.Column="2" Click="bEnter_Click"/>
         <Button x:Name="bLogin" Content="Залогиниться" Grid.ColumnSpan="2" HorizontalAlignment="Left" Margin="25,88,0,0" VerticalAlignment="Top" Click="Button_Click" Height="66" Width="140"/>
         <Button x:Name="bRegistration" Grid.Column="1" Content="Зарегестрироваться" HorizontalAlignment="Left" Margin="25,182,0,0" VerticalAlignment="Top" Height="67" Width="140" Click="bRegistration_Click"/>
         <Label Content="Логин" HorizontalAlignment="Left" Margin="35,90,0,0" VerticalAlignment="Top" Grid.Column="2"/>
