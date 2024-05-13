@@ -5,7 +5,7 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:WpfApp1"
         mc:Ignorable="d"
-        Title="Window1" Height="450" Width="1103" Loaded="Window_Loaded_1">
+        Title="Window1" Height="533" Width="1110" Loaded="Window_Loaded_1">
     <Grid HorizontalAlignment="Left" Width="1048" Margin="0,0,0,-112">
         <Grid.ColumnDefinitions>
             <ColumnDefinition Width="*"/>
@@ -26,13 +26,23 @@
         <Button x:Name="bAdd" Grid.Column="5" Content="добавить информацию" HorizontalAlignment="Left" Margin="205,108,0,0" VerticalAlignment="Top" Click="bAdd_Click"/>
         <Button x:Name="bAnalys" Grid.Column="5" Content="Провести анализ" HorizontalAlignment="Left" Margin="205,170,0,0" VerticalAlignment="Top"/>
         <Button x:Name="bQuotes" Grid.Column="5" Content="Получить котировки" HorizontalAlignment="Left" Margin="205,222,0,0" VerticalAlignment="Top" Click="bQuotes_Click"/>
-        <DataGrid x:Name="dgMain" d:ItemsSource="{d:SampleData ItemCount=5}" Margin="102,251,45,125" Grid.Column="1" Grid.ColumnSpan="4"/>
 
+        <DataGrid x:Name="dgMain" HorizontalAlignment="Left" Height="263" VerticalAlignment="Top" Width="642" Grid.ColumnSpan="5" Margin="9,232,0,0" Grid.Column="1">
+            <DataGrid.Columns>
+                <DataGridTextColumn Binding="{Binding Path=PositionID}" Header="ID товара"/>
+                <DataGridTextColumn Binding="{Binding Path=PositionName}" Header="Название товара"/>
+                <DataGridTextColumn Binding="{Binding Path=PositionType}" Header="Тип товара"/>
+                <DataGridTextColumn Binding="{Binding Path=PositionValue}" Header="Количество товара"/>
+                <DataGridTextColumn Binding="{Binding Path=PositionPrice}" Header="Цена за товар"/>
+                <DataGridTextColumn Binding="{Binding Path=PriceCurrency}" Header="Цена в валюте"/>
+            </DataGrid.Columns>
+        </DataGrid>
         <ListBox x:Name="lbQuotes" Grid.Column="5" d:ItemsSource="{d:SampleData ItemCount=5}" Margin="41,277,-40,139"/>
         <Slider x:Name="sMarkup" Grid.Column="4" HorizontalAlignment="Left" Margin="109,162,0,0" VerticalAlignment="Top" Width="120"/>
         <ComboBox x:Name="cbPosType" Grid.Column="3" HorizontalAlignment="Left" Margin="19,109,0,0" VerticalAlignment="Top" Width="120" Grid.ColumnSpan="2"/>
         <Button x:Name="bUpdate" Grid.Column="1" Content="Обновить БД" HorizontalAlignment="Left" Margin="173,207,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.377,-1.08"/>
         <Button x:Name="bMarkup" Grid.Column="5" Content="Установить наценку" HorizontalAlignment="Left" Margin="67,169,0,0" VerticalAlignment="Top"/>
+
         <Label x:Name="lMarkup" Grid.Column="4" Content="100%" HorizontalAlignment="Left" Margin="263,158,0,0" VerticalAlignment="Top" RenderTransformOrigin="-1.066,-0.58"/>
 
     </Grid>
