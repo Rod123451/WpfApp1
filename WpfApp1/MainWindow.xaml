@@ -6,23 +6,23 @@
         xmlns:local="clr-namespace:WpfApp1"
         mc:Ignorable="d"
         Title="MainWindow" Height="355" Width="577">
-    <Grid Margin="0,0,34,26">
-        <Grid.ColumnDefinitions>
-            <ColumnDefinition Width="0*"/>
-            <ColumnDefinition Width="301*"/>
-            <ColumnDefinition Width="341*"/>
-            <ColumnDefinition Width="0*"/>
-            <ColumnDefinition Width="28*"/>
-        </Grid.ColumnDefinitions>
-        <Button x:Name="bEnter" Content="Войти" HorizontalAlignment="Left" Margin="90,260,0,0" VerticalAlignment="Top" Height="34" Width="85" Grid.Column="2" Click="bEnter_Click"/>
-        <Button x:Name="bLogin" Content="Залогиниться" Grid.ColumnSpan="2" HorizontalAlignment="Left" Margin="25,88,0,0" VerticalAlignment="Top" Click="Button_Click" Height="66" Width="140"/>
-        <Button x:Name="bRegistration" Grid.Column="1" Content="Зарегестрироваться" HorizontalAlignment="Left" Margin="25,182,0,0" VerticalAlignment="Top" Height="67" Width="140" Click="bRegistration_Click"/>
-        <Label Content="Логин" HorizontalAlignment="Left" Margin="35,90,0,0" VerticalAlignment="Top" Grid.Column="2"/>
-        <Label Content="Пароль 1" HorizontalAlignment="Left" Margin="25,136,0,0" VerticalAlignment="Top" Grid.Column="2"/>
-        <Label Content="Пароль 2" HorizontalAlignment="Left" Margin="26,185,0,0" VerticalAlignment="Top" Grid.Column="2"/>
-        <TextBox x:Name="tbLogin" HorizontalAlignment="Left" Margin="141,103,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" Grid.Column="2"/>
-        <TextBox x:Name="tbPass1" HorizontalAlignment="Left" Margin="140,149,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" Grid.Column="2"/>
-        <TextBox x:Name="tbPass2" HorizontalAlignment="Left" Margin="141,198,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" Grid.Column="2"/>
+	<Grid Margin="0,0,34,26">
+		<Grid.ColumnDefinitions>
+			<ColumnDefinition Width="0*"/>
+			<ColumnDefinition Width="301*"/>
+			<ColumnDefinition Width="341*"/>
+			<ColumnDefinition Width="0*"/>
+			<ColumnDefinition Width="28*"/>
+		</Grid.ColumnDefinitions>
+		<Button x:Name="bEnter" Content="Войти" HorizontalAlignment="Left" Margin="54,230,0,0" VerticalAlignment="Top" Height="34" Width="85" Grid.Column="2" Click="bEnter_Click"/>
+		<Button x:Name="bLogin" Content="Залогиниться" HorizontalAlignment="Center" Margin="0,91,0,0" VerticalAlignment="Top" Click="Button_Click" Height="66" Width="140" Grid.Column="1"/>
+		<Button x:Name="bRegistration" Grid.Column="1" Content="Зарегестрироваться" HorizontalAlignment="Center" Margin="0,185,0,0" VerticalAlignment="Top" Height="67" Width="140" Click="bRegistration_Click"/>
+		<Label Content="Логин" HorizontalAlignment="Left" Margin="32,59,0,0" VerticalAlignment="Top" Grid.Column="2"/>
+		<Label Content="Пароль 1" HorizontalAlignment="Left" Margin="22,105,0,0" VerticalAlignment="Top" Grid.Column="2"/>
+		<Label Content="Пароль 2" HorizontalAlignment="Left" Margin="23,154,0,0" VerticalAlignment="Top" Grid.Column="2"/>
+		<TextBox x:Name="tbLogin" HorizontalAlignment="Left" Margin="138,72,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" Grid.Column="2"/>
+		<TextBox x:Name="tbPass1" HorizontalAlignment="Left" Margin="137,118,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" Grid.Column="2"/>
+		<TextBox x:Name="tbPass2" HorizontalAlignment="Left" Margin="138,167,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" Grid.Column="2"/>
 
-    </Grid>
+	</Grid>
 </Window>

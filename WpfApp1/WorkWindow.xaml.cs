@@ -76,6 +76,16 @@ namespace WpfApp1
                  Enum.GetValues(typeof(PositionType));
             cbPosType.SelectedIndex = 0;
         }
+
+        private void sMarkup_ValueChanged(object sender, RoutedPropertyChangedEventArgs<double> e)
+        {
+            lMarkup.Content = Math.Round(100 + sMarkup.Value, 2) + "%";
+        }
+
+        private void bMarkup_Click(object sender, RoutedEventArgs e)
+        {
+
+        }
     }
 
     namespace MoneyTracker
